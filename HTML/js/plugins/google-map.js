@@ -17,8 +17,8 @@ function googleMap() {
         var latlng = new google.maps.LatLng($map_lat, $map_lon);
         var options = {
             scrollwheel: false,
-            draggable: false,
-            zoomControl: false,
+            draggable: true,
+            zoomControl: true,
             disableDoubleClickZoom: true,
             disableDefaultUI: true,
             zoom: $map_zoom,
@@ -101,22 +101,22 @@ function googleMap() {
                 }, {
                     "featureType": "poi",
                     "stylers": [{
-                        "visibility": "off"
+                        "visibility": "on"
                     }]
                 }, {
                     "featureType": "road",
                     "stylers": [{
-                        "visibility": "off"
+                        "visibility": "on"
                     }]
                 }, {
                     "featureType": "transit",
                     "stylers": [{
-                        "visibility": "off"
+                        "visibility": "on"
                     }]
                 }, {
                     "featureType": "landscape.man_made",
                     "stylers": [{
-                        "visibility": "off"
+                        "visibility": "on"
                     }]
                 }, {
                     "featureType": "administrative",

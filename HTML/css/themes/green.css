@@ -124,8 +124,9 @@ a:focus,
 .btn-default:focus,
 .btn-default:active,
 .btn-default.active {
-    background-color: transparent;
-    border-color: #FFF;
+    background-color: #4eae49;
+    /*background-color: transparent;*/
+    border-color: #4eae49;
     color: #FFF;
 }
 

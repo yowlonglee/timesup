@@ -1,0 +1,34 @@
+.event_where a, .event_where a:hover {
+	color: #fff;
+}
+.map-link {
+	margin-left: 5px;
+	font-size: 12px;
+}
+.brief ol {
+	list-style-position: inside;
+}
+.speaker-info {
+	text-align: left;
+}
+.more-info {
+	text-align: center;
+	display: block;
+}
+.panel-title {
+	font-size: inherit;
+}
+.panel-title > a {
+	padding-right: 36px;
+}
+.panel-body {
+	font-size: 14px;
+}
+.pricing-item:not(.early-bird) .plan-features {
+	margin-bottom: 47px;
+}
+@media only screen and (min-width: 375px) and (max-width: 1024px) {	
+	.header.parallax-bg {
+		background-attachment: scroll;
+	}
+}
