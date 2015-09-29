@@ -708,7 +708,7 @@ p,
  --------------- */
 
 .header.parallax-bg {
-    background: url('../images/parallax-bg.jpg') no-repeat center top;
+    background: #4eae49 url('../images/parallax-bg.jpg') no-repeat center top;
     background-size: cover;
     background-attachment: fixed;
 }

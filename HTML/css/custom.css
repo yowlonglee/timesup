@@ -1,3 +1,9 @@
+.logo img {
+	width: 45px;
+}
+.navbar-brand img {
+	width: 108px;
+}
 .strong {
 	font-weight: 700;
 }
@@ -29,10 +35,10 @@ ol.sub-list li:before {
 .event_where a, .event_where a:hover {
 	color: #fff;
 }
-.header_top-bg {
+/*.header_top-bg {
 	min-height: 1px;
 }
-.map-link {
+*/.map-link {
 	margin-left: 5px;
 	font-size: 12px;
 }
