@@ -1,19 +1,56 @@
+.strong {
+	font-weight: 700;
+}
+ol {
+	list-style-type: none;
+	padding-left: 0;
+	counter-reset: item;
+}
+ol > li {
+	counter-increment: item;
+	margin-left: 1.4em;
+}
+ol > li:before {
+	content: counter(item)".";
+	margin-right: .4em;
+	margin-left: -1.2em;
+}
+ol.sub-list {
+	counter-reset: sub;
+}
+ol.sub-list > li {
+	counter-increment: sub;
+	padding-left: 1.4em;
+}
+ol.sub-list li:before {
+	content: counter(sub) '.)';
+	margin-left: -1.5em;
+}
 .event_where a, .event_where a:hover {
 	color: #fff;
+}
+.header_top-bg {
+	min-height: 1px;
 }
 .map-link {
 	margin-left: 5px;
 	font-size: 12px;
 }
-.brief ol {
-	list-style-position: inside;
+.brief, .testimonials {
+	padding: 30px 0;
 }
-.speaker-info {
-	text-align: left;
+.brief .section-title, .testimonials .section-title {
+	margin-top: 40px;
 }
-.more-info {
-	text-align: center;
+.brief .section-header {
+	margin-top: 2em;
+}
+.speaker-info p, .speaker-info span {
 	display: block;
+}
+.testimony {
+	text-align: left;
+	margin-top: .4em;
 }
 .panel-title {
 	font-size: inherit;
@@ -24,11 +61,15 @@
 .panel-body {
 	font-size: 14px;
 }
+.contact-box p {
+	text-align: left;
+}
 .pricing-item:not(.early-bird) .plan-features {
 	margin-bottom: 47px;
 }
-@media only screen and (min-width: 375px) and (max-width: 1024px) {	
+@media only screen and (min-width: 320px) and (max-width: 1024px) {	
 	.header.parallax-bg {
 		background-attachment: scroll;
+		background-position: center center !important;
 	}
 }

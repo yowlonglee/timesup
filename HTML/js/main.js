@@ -211,7 +211,8 @@ $(".play-video").on("click",function(e) {
     e.preventDefault();
     var videourl = $(this).data("video-url");
     $(this).append('<i class="video-loader fa fa-spinner fa-spin"></i>')
-    $('.media-video iframe').attr('src', videourl);
+    // $('.media-video iframe').attr('src', videourl);
+    $('.media-video video').attr('src', videourl);
     setTimeout(function() {
         $('.video-loader').remove();
     }, 1000);
