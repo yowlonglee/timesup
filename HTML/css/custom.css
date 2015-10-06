@@ -73,6 +73,13 @@ ol.sub-list li:before {
 .pricing-item:not(.early-bird) .plan-features {
 	margin-bottom: 47px;
 }
+.early-bird .btn, .early-bird .plan-name, .early-bird .price {
+	text-decoration: line-through;
+}
+.early-bird .btn {
+	pointer-events:none;
+	cursor: default;
+}
 @media only screen and (min-width: 320px) and (max-width: 1024px) {	
 	.header.parallax-bg {
 		background-attachment: scroll;
